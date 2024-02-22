@@ -35,7 +35,7 @@ func SignRFC6979(sk *ecdsa.PrivateKey, hash common.Hash) (*big.Int, *big.Int, er
 	s.Mul(s, inv)                                                            // s = s * nonce^-1
 	s.Mod(s, curve.N)                                                        // s = s mod N
 
-	// if s.Cmp(halfN) == 1 {												 // if s > N/2, then s = N - s
+	// if s.Cmp(halfN) == 1 {                                                // if s > N/2, then s = N - s
 	// 	s.Sub(curve.N, s)
 	// }
 	var s1 secp_dcrec.ModNScalar
