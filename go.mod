@@ -1,4 +1,4 @@
-module go-secp256k1
+module github.com/zkweb3/go-secp256k1
 
 go 1.21.6
 
