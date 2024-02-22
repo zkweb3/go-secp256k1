@@ -2,5 +2,5 @@
 
 ### Testing
 ```bash
-go test -timeout 5s -run . go-secp256k1 -v -count=1
+go test -timeout 5s -run . github.com/zkweb3/go-secp256k1 -v -count=1
 ```
